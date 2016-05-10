@@ -84,7 +84,8 @@ render: function() {
 }
 ```
 
-```render()```方法其实就是组装字符串然后append到页面上,然后根据先前note的属性动态去修改样式.
+render()方法其实就是组装字符串然后append到页面上,然后根据先前note的属性动态去修改样式.
+
 
 ```
 bind: function() {
@@ -124,28 +125,26 @@ bind: function() {
     });
 ```
 
-```bind()```方法则是绑定事件,实现拖动、删除等效果.
-
-
+bind()方法则是绑定事件,实现拖动、删除等效果.
 
 ```
 save() 例如: note.save(data)会把data存入localStorage中,以note的id为key值.
 ```
 
-```save()```是用来将note的内容保存到localStorage中的.
+save()是用来将note的内容保存到localStorage中的.
 
 ```
 destroy() 例如: note.destroy()
 ```
 
-```destroy()```则是清除页面上的note以及localStorage中对应的数据的.
+destroy()则是清除页面上的note以及localStorage中对应的数据的.
 
 
 ```
 setLocation(x, y) 例如: note.setLocation(100, 50)
 ```
 
-```setLocation(x, y)```设置note在父容器wrap中的坐标,以左上角为坐标原点.
+setLocation(x, y)设置note在父容器wrap中的坐标,以左上角为坐标原点.
 
 
 ## gulp构建部分
