@@ -73,7 +73,6 @@ render: function() {
 
     $note = $(noteStr);
     this.$wrap.append($note);
-    // $note.css('background', this.colors[this.color]);
     $note.find('.header').css('background', this.colors[this.color]);
     $note.find('.content').css('background', 'linear-gradient(-30deg, transparent 1.25em, ' + this.colors[this.color] + ' 0)');
     //将页面HTML的jQuery与Note对象关联起来
